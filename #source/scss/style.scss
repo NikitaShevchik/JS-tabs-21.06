@@ -1,5 +1,86 @@
 // Обнуление стилей
 @import "nullstyle.scss";
 // Подключение шрифтов
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 //SCSS
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.header {
+height: 50px;
+background-color: rgb(187, 239, 255);
+    &__content {
+    }
+
+    &__tabs {
+        display: flex;
+        flex-direction: row;
+    }
+}
+.content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.tabs {
+    &__item {
+        padding: 0 15px;
+        // margin: 0 40px 0 0;
+        line-height: 50px;
+        cursor: pointer;
+        &:hover{
+            color: #fff;
+        }
+        &_1 {
+        }
+
+        &_2 {
+        }
+
+        &_3 {
+        }
+    }
+}
+
+.main {
+    &__content {
+    }
+
+    &__pages {
+    }
+}
+.pages {
+
+    &__item {
+        padding: 0 20px;
+        display: none;
+        &_1 {
+        }
+
+        &_2 {
+        }
+
+        &_3 {
+        }
+    }
+
+    &__title {
+        padding: 20px 0;
+    }
+
+    &__text {
+    }
+}
+
+.tabs__item._active{
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    &:hover{
+        color: #000;
+    }
+}
+
+.pages__item._active{
+    display: block;
+}
