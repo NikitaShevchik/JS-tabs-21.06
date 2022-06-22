@@ -12,14 +12,32 @@ for (let i of allTabs) {
             k.classList.remove('_active')
         }
         i.classList.add('_active')
+        openPage()
     })
 }
 
+console.log(allPages[1])
+
+// function openPage() {
+//     for (let i of allTabs) {
+//         if (i.classList.contains('_active')) {
+//             console.log('++', i)
+//         }
+//     }
+// }
+//ДОДЕЛАТЬ ОТКРЫТИЕ НУЖНОЙ СТРАНИЦЫ АУ
+
 function openPage() {
-    for (let i of allTabs) {
-        if (i.classList.contains('_active')) {
-            console.log('++', i)
+    var numberPage = 0;
+    for (let tab of allTabs) {
+        if (tab.classList.contains('_active')) {
+            for (let page of allPages) {
+                page.classList.remove('_active')
+            }
+            allPages[numberPage].classList.add('_active');
+            numberPage = 0;
+        } else {
+            numberPage++;
         }
     }
 }
-//ДОДЕЛАТЬ ОТКРЫТИЕ НУЖНОЙ СТРАНИЦЫ АУ
