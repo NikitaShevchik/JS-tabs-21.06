@@ -65,10 +65,15 @@ background-color: rgb(187, 239, 255);
     }
 
     &__title {
-        padding: 20px 0;
+        padding: 20px 0 10px 0;
+        font-weight: 700;
     }
 
     &__text {
+        p{
+            padding: 10px 0;
+            line-height: 1.4;
+        }
     }
 }
 
@@ -76,6 +81,8 @@ background-color: rgb(187, 239, 255);
     background-color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    margin-top: 5px;
+    line-height: 40px;
     &:hover{
         color: #000;
     }

@@ -115,13 +115,21 @@ body {
 }
 
 .pages__title {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
+  font-weight: 700;
+}
+
+.pages__text p {
+  padding: 10px 0;
+  line-height: 1.4;
 }
 
 .tabs__item._active {
   background-color: #fff;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  margin-top: 5px;
+  line-height: 40px;
 }
 
 .tabs__item._active:hover {
